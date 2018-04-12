@@ -17,14 +17,94 @@
 
 %Kapitel I
 
-\section{Kapitel I - Maxwellsche Gleichungen}
-Maxwell I
-Maxwell II
-\section{Kapitel I}
+\section{Kapitel I - Maxwell-Gleichungen}
 
+Dies sind partielle Differentialgleichungen für elektrische und magnetische Felder, d.h. ortsabhängige Vektorgrößen. \\ 
+Beispiel: $\vec E(t, \vec x)$ = ``elektrisches Feld am Ort $\vec x$ zur Zeit t.''\\
+Grundinterpretation: Kraft auf Teilchen der Ladung $q$ mit der Geschwindigkeit $\vec v$\\
 
+\subsection{Lorenz-Kraft}
+$\vec F = q[\vec E(t, \vec x) + \vec v \times \vec B(\vec x, t)]$ $(=m  \ddot{\vec x}) $
 
+\subsection{$\vec E, \vec B, \vec H ~ und ~ \vec H$}
+$\vec E$ und $\vec B$ erfüllen die homogenen Maxwell-Gleichungen:\\
+$$div ~ \vec B = 0$$
+$$rot ~ \vec E + \dot{\vec B} = 0$$
+Die Felder werden ``erzeugt'' durch Ladungen und Ströme. Dazu fürhen wir ein: \\
+$\vec D(t, \vec x)$ = ``dielektrische Verschiebung''\\
+$\vec H(t, \vec x)$ = ``magnetische Erregung''\\
+$div ~ \vec D = \rho = $ Ladungsdichte\\
+$rot ~ \vec H - \dot{\vec D} = $ j = Stromdichte\\
+Der Zusammenhang $(\vec E, \vec B)$ mit $(\vec D, \vec H)$ wird hergestellt durch \textbf{Materialgleichungen}.\\
+Das einfachste Material ist Vakuum:\\
+$\vec D = \epsilon_0 ~ \vec E$ ($\epsilon_0$ = Dieelektirzitätskonstante) \\ 
+$\vec B = \mu_0 ~ \vec H$ ($\mu_0$ = Permeabilität des Vakuums) \\
+\subsubsection{Dielektrika}
+Materialgleichungen wie oben, aber: $\epsilon_0 \rightarrow \epsilon(\vec x, t)$ und $\mu_0 \rightarrow \mu(\vec x, t)$\\
+\subsubsection{Komplikationen}
+\begin{itemize}
+\item $\epsilon, \mu \rightarrow Matrizen$ (anisotropes Material)
+\item $\vec D = \vec D(\vec E)$ nicht linear
+\item $\vec D = \vec D$ ganze Vorgeschichte [Gedächtniseffekt] des Material(punktes) $\rightarrow$ Dispersion
+\item Leiter: Ohmesches Gesetz: $\vec j = \sigma \vec E$ ($\sigma$ = Leitfähigkeit)
+\item Supraleiter: $\vec B = 0$ im Supraleiter
+\item der ganze Rest: Fast alle Materialgrößen koppeln an EM-Felder, Piezo-Kristall, Thermo-Element, Magneto-Hydrodynamik
+\end{itemize}
 
+%End Kapitel I
 
+%Begin Kapitel II
+\section{Kapitel II - Vektoranalysis und Potentiale}
+\subsection{Ableitung als lineare Approximation}
+$f: \mathbb{R}^n \rightarrow \mathbb{R}^m$ n=m=1 \\
+Gesucht: affine Approximation:\\
+$f(x) = a + B ~ x$ mit $f_j (x_1, ..., x_n)$  = $\sum_{\alpha = 1}^n B_{i \alpha} ~ x_\alpha + a_j ~~~$ j=1, ..., m $~~~ a \in \mathbb{R}^m~~~$ B = m $\times$ n-Matrix\\\\
+Aproximiere allgemeine Funktion $f: \mathbb{R}^n \rightarrow \mathbb{R}^n$ durch eine affine ????????? in der Nähe von $\mathbb{R}^n$ \\
+$f(x+y) - f(a+B~y) = \theta(y)~~~$ ($\theta := Terme, die schneller als y gegen Null gehen$)\\
+d.h.: $\lim_{|y| \rightarrow 0} \frac{1}{|y|} |f(x+y) - (a+B~y)|=0 $\\
+hier sind |y| und |...| beliebige ``Vektorbeträge'' (=Normen)\\
+Alle Normen liefern den gleichen Begriff von ``f ist differenzierbar bei x'' $\Leftrightarrow \exists a, B $ lin. Apporximation.\\
+Dann sind a, B eindeutig bestimmt. \\
+Wenn $\tilde{a},~\tilde{B}$ andere wählen $\Rightarrow |\tilde{a} + B~y - (a+B~y)| \leq |\tilde{a}+\tilde{B}y - f(x+y)-a-B~y| ~=~ \theta(y)$\\
+$\frac{|(\tilde{B} - B) ~ y|}{|y|} ~ \rightarrow 0$\\
+Es ist a=f(x)\\
+$B:=(\nabla f)(x) = m \times n-Matrix$\\
+$B_{j\alpha} = \frac{\partial f_j}{\partial x_\alpha}(x)$ := gewöhnliche Ableitung von $f_j$ nach $x_\alpha$, wobei die Übrigen $x_\beta$ festgehalten werden.
+
+\subsection{Volumina und Determinanten}
+Berechne in n Dimensionen das Volumen eines Parallel-Epipedes\\
+A=($\vec a^{(1)} ~ \vec a^{(2)} ~ \vec a^{(3)}$) mit $A_{ij} = (\vec \alpha^j)_i$ Das Volumen ist also: $V(\vec a_1, ..., \vec a_n) = |det A|$\\
+Für EDynamik extrem praktisch: betrachte direkt (det A) = ``orientiertes Volumen''
+\subsection{Integrale über diverser Dimensionen}
+\subsubsection{Kurvenintegrale}
+parametrisierte Kurve $\xi: [0, 1] \longrightarrow \mathbb{R}^n$\\
+Definiere Integrale als Summen über Teilintervalle (Die sind viel einfacher!).\\
+Kurve ist praktisch eine Gerade (Integrand praktisch konstant)\\
+Betrag des Intervalls [$s_{i-1}, s_i$] entlang des Vektors $\vec \xi(s_i) - \vec \xi(s_{i-1})$. Also in Relation ($\vec \xi(s_i) - \vec \xi(s_{i-1})$) * $\vec F(\vec \xi(s_i))$ ($\vec F$ ist ein Vektorfeld) \\
+$\int_{Kurve} d ~\vec \xi ~ \vec F(\vec \xi) = \lim_{Unterteilung~fein} \sum_{i=1}^N (\vec \xi(s_i) - \vec \xi(s_{i-1)})) * \vec F(\vec \xi(s))$
+ = $lim \sum_{i=1}^N (s_i-s_{i-1}) \dot{\vec \xi} (s_1) ~ \vec F(\vec \xi(s_i)) = \int_0^1 \dot{\vec \xi} ~ \vec F(\vec \xi(s)) ~ ds$
+\subsubsection{Flächenintegrale}
+Gleiche Prinzipien: $\eta: \Omega_0 \subset \mathbb{R}^2 \longrightarrow \mathbb{R}^n$ parametrisierte Fläche.\\
+Wir möchten etwas über die Fläche $\Omega = \eta(\Omega_0)$\\
+Zerlege in kleine Stückchen und betrachte das Integral über diese, viel einfacheren Flächen.
+\begin{itemize}
+\item Integrand soll linear an beiden Kantenvektoren abhängen 
+\item Abhängigkeit soll determinantenartig sein, parallele Vektoren $\longrightarrow$ Fläche Null <=> F antisymmetrisch:\\
+$0=f(a+b, a+b) = F(a, a) + F(b, a) + F(b, b)$ außerdem gilt: F(a, b) = -F(b, a)\\
+$\Rightarrow F(\vec a, \vec b) = \sum_{ij} F_{ij} a_i b_j$ mit $F_{ij} = -F_{ji}$ drei unabhängige Komponenten: 
+$
+\begin{pmatrix}
+0 & a & -b  \\
+-a & 0 & c \\
+b & -c & 0
+\end{pmatrix}
+$
+\\
+$F(\vec a, \vec b) = \vec a \times \vec b ~ \vec G ~~~(\vec G$ = Vektorfeld)\\
+\item Flächenintegral:\\
+$\int_\Omega \vec G~d\vec f = \int_\Omega \vec n ~\vec G ~ d\vec f = \int_{\Omega_0} \frac{\partial \vec \eta}{\partial s} \times \frac{\partial \vec \eta}{\partial T} ~ \vec G(n(s, t))$
+\end{itemize}
+\\
+$\frac{\partial \vec \eta}{\partial s} \times \frac{\partial \vec \eta}{\partial T} =$ Normalenvektor an die Fläche
 
 \end{document}

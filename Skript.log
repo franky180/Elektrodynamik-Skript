@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.11)  12 APR 2018 14:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.11)  12 APR 2018 21:58
 entering extended mode
 **D:/Sonstiges/GitHub/Elektrodynamik-Skript/Skript.tex
 (D:/Sonstiges/GitHub/Elektrodynamik-Skript/Skript.tex
@@ -842,24 +842,101 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+("C:\Users\eribo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+("C:\Users\eribo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
 [1
 
 {C:/Users/eribo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(Skript.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 59--73
+
+ []
+
+
+Overfull \hbox (30.60689pt too wide) in paragraph at lines 80--86
+[][] \OML/cmm/m/it/10 d [] []\OT1/cmr/m/n/10 ([]) = [][] [][]([](\OML/cmm/m/it/
+10 s[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10   []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
+s[]\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10  []\OT1/cmr/m/n/10 ([](\OML/cmm/m/it/10
+ s\OT1/cmr/m/n/10 ))$ \T1/cmr/m/n/10 = $\OML/cmm/m/it/10 lim [][]\OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 s[] \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 
+)[]\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 ) [](
+[](\OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 )) =
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 92--104
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108 $
+       \frac{\partial \vec \eta}{\partial s} \times \frac{\partial \vec \eta...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[3] (Skript.aux) ) 
 Here is how much of TeX's memory you used:
- 4933 strings out of 493312
- 68738 string characters out of 3129827
- 134672 words of memory out of 3000000
- 8396 multiletter control sequences out of 15000+200000
- 5946 words of font info for 17 fonts, out of 3000000 for 9000
+ 5000 strings out of 493312
+ 69702 string characters out of 3129827
+ 142672 words of memory out of 3000000
+ 8437 multiletter control sequences out of 15000+200000
+ 14941 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,4n,30p,336b,129s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\eribo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ecrm1000.pk> <C:\Users\eribo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\jknappen\ec\dpi600\ecbx1440.pk>
-Output written on Skript.pdf (1 page, 15264 bytes).
+ 55i,8n,30p,336b,195s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\eribo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
+appen\ec\dpi600\tcrm1000.pk> <C:\Users\eribo\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\eribo\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\eribo\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\eribo\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk><C:/Users/e
+ribo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pf
+b><C:/Users/eribo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb><C:/Users/eribo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb><C:/Users/eribo/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/eribo/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/eribo/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/eribo
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/
+Users/eribo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r7.pfb><C:/Users/eribo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/eribo/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb><C:/Users/eribo/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Skript.pdf (3 pages, 173948 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
+ 237 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
