@@ -104,7 +104,52 @@ $F(\vec a, \vec b) = \vec a \times \vec b ~ \vec G ~~~(\vec G$ = Vektorfeld)\\
 \item Flächenintegral:\\
 $\int_\Omega \vec G~d\vec f = \int_\Omega \vec n ~\vec G ~ d\vec f = \int_{\Omega_0} \frac{\partial \vec \eta}{\partial s} \times \frac{\partial \vec \eta}{\partial T} ~ \vec G(n(s, t))$
 \end{itemize}
-\\
-$\frac{\partial \vec \eta}{\partial s} \times \frac{\partial \vec \eta}{\partial T} =$ Normalenvektor an die Fläche
-
+$\frac{\partial \vec \eta}{\partial s} \times \frac{\partial \vec \eta}{\partial T} =$ Normalenvektor an die Fläche\\
+\subsubsection{Idee bei all diesen Integralen:}
+Über kleine Flächenstücke wird alles einfach\\
+Es reichen: (wegen linearer Approximation)\\
+\begin{itemize}
+\item flache Plaketten
+\item konstante Funktionen
+\end{itemize}
+$\eta: \Omega_0 \subset \mathbb{R}^2 \longrightarrow \mathbb{R}^3$\\
+Tangentialvektoren: $\frac{\partial \vec \eta}{\partial t}(t, s), $ $\frac{\partial \vec \eta}{\partial s}(t, s)$\\
+$\eta(t+\Delta t, s) = \vec \eta(t, s) + \Delta t \frac{\partial \vec \eta}{\partial t}(t, s) + \theta(\Delta t)$\\
+Plaketten haben Kantenvektoren:\\
+$\frac{\partial \vec \eta}{\partial t} \Delta t$ und $\frac{\partial \vec \eta}{\partial s} \Delta s$\\
+Wir betrachten Integranden, für die der Betrag einer kleinen Plakette linear in den Kantenvektoren ist. (=> automaitsch richtiges Verhalten bei Untersuchung) -> Integrand gegeben durch Vektorfeld $\vec G$\\
+Betrag einer Plakette $= \Delta t \Delta s$ $ ( \frac{\partial \vec \eta}{\partial t} \times {x} \frac{\partial \vec \eta}{\partial s} ) * \vec G(\vec \eta(t, s))$\\
+Volumenintegrale: genauso!\\
+Parallelogramme, Platten $\rightarrow$ Spate\\
+L = Integrieren in krummlinigen Koordinaten = Substitutionsregel\\
+\subsubsection{Jacobi-Matrix der Transformation}
+dx dy dz = Funktionaldeterminante dr d$\vartheta$ d$\varphi$ = det 
+$\begin{pmatrix}
+\frac{\partial x}{\partial r} & \frac{\partial x}{\partial \vartheta} & \frac{\partial x}{\partial \varphi}  \\
+\frac{\partial y}{\partial r} & \frac{\partial y}{\partial \vartheta} & \frac{\partial y}{\partial \varphi} \\
+\frac{\partial z}{\partial r} & \frac{\partial z}{\partial \vartheta} & \frac{\partial zb}{\partial \varphi}
+\end{pmatrix}$
+\subsubsection{Beispiel: 3D Polarkoordinaten}
+$\vec p(r, \vartheta, \varphi) = r
+\begin{pmatrix}
+cos(\varphi) sin(\vartheta) \\
+sin(\varphi) sin(\vartheta) \\
+cos(\vartheta)
+\end{pmatrix}$\\
+$|\vec p|^2 = r^2(sin^2\vartheta(cos^2\varphi + sin^2\varphi)+cos^2\vartheta) = r^2$\\
+$\nabla \vec p =
+\begin{pmatrix}
+\frac{\partial p_1}{\partial r} ... \\
+.\\
+.\\
+.
+\end{pmatrix}
+=
+\begin{pmatrix}
+cos(\varphi) sin(\vartheta) & r cos(\varphi) cos(\vartheta) & -r sin(\varphi) sin(\vartheta)  \\
+sin(\varphi) & r sin(\varphi) cos(\vartheta) & r cos(\varphi) sin(\vartheta) \\
+cos(\vartheta) & -r sin(\vartheta) & 0
+\end{pmatrix}
+ $ \\
+ det(Jacobi) = $r^2 [0+cos^2(\vartheta)sin(\vartheta)cos^2(\varphi)+sin^3(\vartheta) sin^2(\varphi)-(-cos^2(\vartheta) sin(\vartheta) sin^2(\varphi)-sin^3(\vartheta) cos^2(\varphi)+0)] = r^2 (sin^3(\vartheta) + sin(\vartheta) cos^2(\vartheta))= r^2 sin(\vartheta)$
 \end{document}
